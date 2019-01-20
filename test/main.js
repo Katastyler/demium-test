@@ -3,8 +3,6 @@ import { Nuxt, Builder } from 'nuxt'
 import { JSDOM } from 'jsdom'
 import test from 'ava'
 
-import Index from '../pages/index.vue'
-
 // We keep the nuxt and server instance
 // So we can close them at the end of the test
 let nuxt = null
