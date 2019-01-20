@@ -1,7 +1,7 @@
 <template>
   <b-container class="index-container">
     <b-row class="lists-container">
-      <draggable v-model="lists" class="drag-container">
+      <draggable id="draggable" v-model="lists" class="drag-container">
         <transition-group>
           <b-col v-for="list in lists" :key="list.id" class="rows">
             <list :properties="list" @deleteList="deleteList"/>
